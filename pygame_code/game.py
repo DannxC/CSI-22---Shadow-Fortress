@@ -1,10 +1,9 @@
 import pygame, sys
+from constants import *
 
 # Setup
 pygame.init()
-screen_width = 1200
-screen_height = 700
-screen = pygame.display.set_mode((screen_width, screen_height))
+screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 clock = pygame.time.Clock()
 
 # Main game loop
