@@ -1,0 +1,8 @@
+.DS_Store
+assets/.DS_Store
+assets/__pycache__/
+assets/constants/__pycache__/
+assets/images/.DS_Store
+assets/maps/__pycache__/
+data_objects/__pycache__/
+data_objects/levels/__pycache__/
