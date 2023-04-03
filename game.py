@@ -1,6 +1,6 @@
 import pygame, sys
-from .assets.constants.constants import *
-from .data_objects.levels.solid_tiles import SolidTile
+from assets.constants.constants import *
+from data_objects.levels.solid_tiles import SolidTile
 
 # Setup
 pygame.init()

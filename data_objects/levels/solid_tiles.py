@@ -9,4 +9,4 @@ class SolidTile(pygame.sprite.Sprite):
         self.image.fill('grey')
 
         # Define the rectangle
-        self.rect = self.image.get_rect(topleft = position).convert_alpha()
+        self.rect = self.image.get_rect(topleft = position)
