@@ -6,3 +6,4 @@ assets/images/.DS_Store
 assets/maps/__pycache__/
 data_objects/__pycache__/
 data_objects/levels/__pycache__/
+data_objects/players/__pycache__/
