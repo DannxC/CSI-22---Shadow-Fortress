@@ -1,12 +1,15 @@
 import pygame, sys
 from assets.constants.constants import *
+from assets.maps.level1 import level1_map
+from data_objects.levels.level import Level
 from data_objects.levels.solid_tiles import SolidTile
+from data_objects.levels.tiles import Tile
 
 # Setup
 pygame.init()
 screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 clock = pygame.time.Clock()
-test_tile = pygame.sprite.Group(SolidTile((100, 100), 200))
+level = Level(level1_map, screen)
 
 # Main game loop
 while True:
@@ -17,9 +20,8 @@ while True:
             sys.exit()
     
     # Update game objects and perform any game logic
-    # Update Map Level:
     screen.fill('black')
-    test_tile.draw(screen)
+    level.run()
 
     # Update Screen
     pygame.display.update()
