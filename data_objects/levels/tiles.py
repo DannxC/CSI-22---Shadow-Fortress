@@ -8,8 +8,8 @@ class Tile(pygame.sprite.Sprite):
         self.rect = self.image.get_rect(topleft = pos)
 
     # Update the tile position as the level shifts
-    def update(self, x_shift):
-        self.rect.x += x_shift
+    def update(self, world_shift):
+        self.rect.x += world_shift
 
 
 class SolidTile(pygame.sprite.Sprite):
