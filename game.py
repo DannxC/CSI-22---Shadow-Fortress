@@ -2,8 +2,7 @@ import pygame, sys
 from assets.constants.constants import *
 from assets.maps.level1 import level1_map
 from data_objects.levels.level import Level
-from data_objects.levels.solid_tiles import SolidTile
-from data_objects.levels.tiles import Tile
+
 
 # Setup
 pygame.init()
@@ -19,7 +18,7 @@ while True:
             pygame.quit()
             sys.exit()
     
-    # Update game objects and perform any game logic
+    # Update game objects and perform game logic
     screen.fill('black')
     level.run()
 
